@@ -56,7 +56,7 @@ var getName = () => { //in memory context, arrow function behaves like a variabl
 }
 
 
-getName(); //getName is not a function. again in memory execution context this getName variable will store a undefined value.
+getName(); //getName is not a function. again in memory execution context this getName variable will store a undefined value on place of fn code.
 console.log(x);
 console.log(getName);
 
