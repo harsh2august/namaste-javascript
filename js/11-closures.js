@@ -1,4 +1,5 @@
 /*
+functions along with its lexcical scope forms a closure
 // var a = 7;
 function x() {
     var a = 7;  //local variable of x function
@@ -71,7 +72,7 @@ function x() {
 }
 
 
-var c = x(); //c contains fn y code.
+var c = x(); //c contains fn y code. //fn y along with its lexical scope was returnmed.
 
 console.log(c);
 
