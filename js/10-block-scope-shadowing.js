@@ -151,7 +151,7 @@ function x() {
     console.log(c);
 }
 x(); //10
-console.log(c); //100
+console.log(c); //100 // //without fn it will be 10
 
 
 
