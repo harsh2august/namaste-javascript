@@ -49,4 +49,33 @@ var b = function (a, b) { //a and b is parameter //local variable in fn scope //
     console.log(a + b)
 }
 b(2, 4); //value passed to fn is arguments
+
+//first class fn
+
+we can pass fn inside another fn as an argument
+function sayHello() {
+  return "Hello, ";
+}
+function greeting(helloMessage, name) {
+  console.log(helloMessage() + name);
+}
+// Pass `sayHello` as an argument to `greeting` function
+greeting(sayHello, "JavaScript!");
+// Hello, JavaScript!
+
+
+fn are treated as values.
+
+var b = function (a) {
+    return function () {
+
+    }
+}
+console.log(b()); //ananymous fn
+
+//the ablity to use fn as values is known as first class fn.
+//the ablity to use fn as variable, can pass fn as argument and can return a fn inside a fn is know as first class fn.
+//fn are same class citizen.
 */
+// let const and arrow fn instroduced in es6 2015
+//arrow fn
